@@ -1,20 +1,23 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import localFont from 'next/font/local';
 import './globals.css';
+import { AuthProvider } from '../context/AuthContext';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
+const robotoFlex = localFont({
+  src: [
+    {
+      path: '../../public/fonts/RobotoFlex.woff2',
+      weight: '400 700',
+      style: 'normal',
+    },
+  ],
+  display: 'swap',
+  variable: '--font-robotoFlex',
 });
 
 export const metadata: Metadata = {
-  title: 'TODO',
-  description: 'TODO',
+  title: 'Tinvest Analytics',
+  description: 'Платформа для анализа инвестиций',
 };
 
 export default function RootLayout({
@@ -24,10 +27,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${robotoFlex.className} antialiased`}>
+        <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
   );

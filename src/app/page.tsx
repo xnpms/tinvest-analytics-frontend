@@ -1,45 +1,52 @@
 // import Image from 'next/image';
+'use client';
+
+import { useState } from 'react';
+import AuthModal from '../components/AuthModal';
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalMode, setModalMode] = useState<'login' | 'register'>('login');
+
   return (
     <div className='flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-[#002]'>
       <main className='flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-[#002] sm:items-start'>
-        <p>LOGO TODO</p>
+        <p>Tinvest Analytics</p>
         <div className='flex flex-col items-center gap-6 text-center sm:items-start sm:text-left'>
           <h1 className='max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50'>
-            Промо страница проекта
+            Тинькофф инвестиции
           </h1>
           <p className='max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400'>
-            Описание описание описание описание описание описание{' '}
-            <a href='#' className='font-medium text-zinc-950 dark:text-zinc-50'>
-              Ссылка
-            </a>{' '}
-            и{' '}
-            <a href='#' className='font-medium text-zinc-950 dark:text-zinc-50'>
-              Еще ссылка
-            </a>{' '}
-            и конец.
+            Управление вложениями и аналитика.
           </p>
         </div>
         <div className='flex flex-col gap-4 text-base font-medium sm:flex-row'>
-          <a
-            className='flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]'
-            href='#'
-            target='_blank'
-            rel='noopener noreferrer'
+          <button
+            className='flex w-full items-center justify-center rounded-lg bg-white px-4 py-2 text-black hover:bg-zinc-200 focus:outline-none focus:ring-2 focus:ring-white-500 disabled:opacity-50 cursor-pointer'
+            onClick={() => {
+              setModalMode('login');
+              setIsModalOpen(true);
+            }}
           >
             Войти
-          </a>
-          <a
-            className='flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]'
-            href='#'
-            target='_blank'
-            rel='noopener noreferrer'
+          </button>
+          <button
+            className='flex w-full items-center justify-center rounded-lg border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] cursor-pointer'
+            onClick={() => {
+              setModalMode('register');
+              setIsModalOpen(true);
+            }}
           >
             Зарегистрироваться
-          </a>
+          </button>
         </div>
       </main>
+      <AuthModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        mode={modalMode}
+        onSwitchMode={setModalMode}
+      />
     </div>
   );
 }

@@ -5,6 +5,18 @@
   --foreground: #171717;
 }
 
+@layer base {
+  /* Сброс стилей для кнопок */
+  button {
+    @apply cursor-pointer;
+  }
+
+  /* Сброс стилей для фокуса */
+  :focus {
+    @apply outline-none;
+  }
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
