@@ -1,35 +1,44 @@
+import type { FC, ReactNode } from 'react';
 import type { Metadata } from 'next';
-import localFont from 'next/font/local';
+import { Manrope, DM_Mono } from 'next/font/google';
 import './globals.css';
-import { AuthProvider } from '../context/AuthContext';
+import { AuthProvider } from '@/context/AuthContext';
+import { LocaleProvider } from '@/context/LocaleContext';
 
-const robotoFlex = localFont({
-  src: [
-    {
-      path: '../../public/fonts/RobotoFlex.woff2',
-      weight: '400 700',
-      style: 'normal',
-    },
-  ],
+const manrope = Manrope({
+  subsets: ['latin', 'cyrillic'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-manrope',
   display: 'swap',
-  variable: '--font-robotoFlex',
+});
+
+const dmMono = DM_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  variable: '--font-dm-mono',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
-  title: 'Tinvest Analytics',
+  title: 'Investa',
   description: 'Платформа для анализа инвестиций',
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang='en'>
-      <body className={`${robotoFlex.className} antialiased`}>
-        <AuthProvider>{children}</AuthProvider>
-      </body>
-    </html>
-  );
+interface RootLayoutProps {
+  children: ReactNode;
 }
+
+const RootLayout: FC<RootLayoutProps> = ({ children }) => (
+  <html lang='ru' className={`${manrope.variable} ${dmMono.variable}`}>
+    <head>
+      <script dangerouslySetInnerHTML={{ __html: `try{const t=localStorage.getItem('theme');if(t==='dark'||(t===null&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch{}` }} />
+    </head>
+    <body className='antialiased'>
+      <LocaleProvider>
+        <AuthProvider>{children}</AuthProvider>
+      </LocaleProvider>
+    </body>
+  </html>
+);
+
+export default RootLayout;

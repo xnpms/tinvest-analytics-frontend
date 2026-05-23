@@ -1,38 +1,92 @@
 @import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary: #7C6FEA;
+  --color-primary-dark: #5B50C8;
+  --color-bg-dark: #F4F5FF;
+  --color-card-dark: #FFFFFF;
+  --color-input-dark: #EEEEF8;
+  --color-text-light: #1A1A2E;
+  --color-text-muted: #8A8AA8;
+  --color-error: #F26B6B;
+  --color-sidebar: #1E1E2E;
+  --color-border: #E8E8F4;
+  --color-accent-green: #4CD9A0;
+  --color-accent-yellow: #F5A623;
+
+  --font-display: var(--font-manrope), sans-serif;
+  --font-body: var(--font-manrope), sans-serif;
+  --font-mono: var(--font-dm-mono), ui-monospace, monospace;
+
+  --animate-blob1: blob-move-1 8s ease-in-out infinite alternate;
+  --animate-blob2: blob-move-2 10s ease-in-out infinite alternate;
+  --animate-fade-up: fade-up 0.6s cubic-bezier(.4,0,.2,1) both;
+}
+
+@keyframes blob-move-1 {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(40px, 30px) scale(1.08); }
+}
+
+@keyframes blob-move-2 {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(-30px, -40px) scale(1.1); }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Dark mode overrides */
+html.dark {
+  --color-bg-dark: #1A1A2E;
+  --color-card-dark: #1F2937;
+  --color-input-dark: #272f3a;
+  --color-text-light: #F9FAFB;
+  --color-text-muted: #9CA3AF;
+  --color-border: rgba(255, 255, 255, 0.08);
+}
+
+html.dark body {
+  background-color: #1A1A2E;
+  color: #F9FAFB;
+}
+
+html.dark .glowing-card {
+  box-shadow:
+    0 0 25px 0 rgba(124, 111, 234, 0.15),
+    0 0 45px 0 rgba(124, 111, 234, 0.1);
+}
+
+@layer components {
+  .field-input {
+    @apply w-full h-[46px] pl-[42px] pr-3.5 rounded-xl border-[1.5px] bg-card-dark text-sm text-text-light placeholder:text-text-muted/60 outline-none transition-all;
+  }
+  .field-input:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(124, 111, 234, 0.12);
+  }
 }
 
 @layer base {
-  /* Сброс стилей для кнопок */
   button {
     @apply cursor-pointer;
   }
-
-  /* Сброс стилей для фокуса */
   :focus {
     @apply outline-none;
   }
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1a1a1a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: #1a1a1a;
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F4F5FF;
+  color: #1A1A2E;
+  font-family: var(--font-body);
+  min-height: max(884px, 100dvh);
+}
+
+.glowing-card {
+  box-shadow:
+    0 8px 32px rgba(124, 111, 234, 0.14),
+    0 2px 8px rgba(124, 111, 234, 0.08);
 }
