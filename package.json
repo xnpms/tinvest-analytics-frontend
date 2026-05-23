@@ -6,14 +6,22 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "locale:extract": "lingui extract",
+    "locale:compile": "lingui compile"
   },
   "dependencies": {
+    "@lingui/core": "^5.9.5",
+    "@lingui/react": "^5.9.5",
+    "chart.js": "^4.5.1",
     "next": "16.0.7",
     "react": "19.2.0",
+    "react-chartjs-2": "^5.3.1",
     "react-dom": "19.2.0"
   },
   "devDependencies": {
+    "@lingui/cli": "^5.9.5",
+    "@lingui/loader": "^5.9.5",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
