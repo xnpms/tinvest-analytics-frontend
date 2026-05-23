@@ -1,2 +1,21 @@
 .git
-npm-debug.log
+.gitignore
+
+# зависимости - устанавливаются заново внутри контейнера
+node_modules/
+
+# артефакты сборки
+.next/
+out/
+
+# инструменты разработки
+.idea/
+.rtk/
+.DS_Store
+
+# логи
+*.log
+npm-debug.log*
+
+# устаревший конфиг (не используется)
+docker/docker-compose.yml
