@@ -1,0 +1,415 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"MIME-Version: 1.0\n"
+"Language: ru\n"
+
+# Auth
+msgid "sign_in"
+msgstr "Войти"
+
+msgid "sign_up"
+msgstr "Создать аккаунт"
+
+msgid "loading"
+msgstr "Загрузка..."
+
+msgid "sign_out"
+msgstr "Выйти"
+
+msgid "hide"
+msgstr "Скрыть"
+
+msgid "show"
+msgstr "Показать"
+
+msgid "close"
+msgstr "Закрыть"
+
+msgid "continue_btn"
+msgstr "Продолжить"
+
+msgid "change_btn"
+msgstr "Изменить"
+
+# Login page
+msgid "marketing_heading"
+msgstr "Анализируйте инвестиции умнее"
+
+msgid "marketing_subheading"
+msgstr "Отслеживайте портфель, доходность и дивиденды в одном месте."
+
+msgid "copyright"
+msgstr "© 2025 Investa. Все права защищены."
+
+msgid "welcome_heading"
+msgstr "Добро пожаловать 👋"
+
+msgid "no_account"
+msgstr "Нет аккаунта?"
+
+msgid "register_link"
+msgstr "Зарегистрироваться"
+
+msgid "password_label"
+msgstr "Пароль"
+
+msgid "forgot_password"
+msgstr "Забыли пароль?"
+
+msgid "password_placeholder"
+msgstr "Введите пароль"
+
+msgid "invalid_credentials"
+msgstr "Неверный email или пароль"
+
+msgid "register_heading"
+msgstr "Создайте аккаунт ✨"
+
+msgid "already_has_account"
+msgstr "Уже есть аккаунт?"
+
+msgid "strong_password_placeholder"
+msgstr "Придумайте надёжный пароль"
+
+msgid "confirm_password_label"
+msgstr "Подтверждение пароля"
+
+msgid "repeat_password_placeholder"
+msgstr "Повторите пароль"
+
+msgid "agree_with"
+msgstr "Я согласен с"
+
+msgid "terms_and_policy"
+msgstr "Условиями и политикой"
+
+msgid "passwords_mismatch"
+msgstr "Пароли не совпадают"
+
+msgid "registration_error"
+msgstr "Ошибка регистрации"
+
+# Account selection
+msgid "select_accounts_heading"
+msgstr "Выберите счета"
+
+msgid "select_accounts_subtitle"
+msgstr "Выберите счета для синхронизации данных."
+
+msgid "account_closed"
+msgstr "Счёт закрыт"
+
+msgid "account_label"
+msgstr "Счёт"
+
+msgid "hidden_accounts"
+msgstr "Скрытые счета"
+
+msgid "select_at_least_one"
+msgstr "Выберите хотя бы один счёт"
+
+msgid "failed_get_account_ids"
+msgstr "Не удалось получить идентификаторы счетов"
+
+msgid "account_selection_error"
+msgstr "Ошибка выбора счетов"
+
+msgid "starting"
+msgstr "Запуск..."
+
+msgid "synchronize"
+msgstr "Синхронизировать"
+
+msgid "synchronize_count"
+msgstr "Синхронизировать ({count})"
+
+# Syncing
+msgid "sync_heading"
+msgstr "Синхронизация"
+
+msgid "sync_loading"
+msgstr "Загружаем данные по вашим счетам..."
+
+msgid "sync_connecting"
+msgstr "Подключение..."
+
+msgid "sync_status_waiting"
+msgstr "Ожидание"
+
+msgid "sync_status_syncing"
+msgstr "Синхронизация"
+
+msgid "sync_status_done"
+msgstr "Завершено"
+
+msgid "sync_status_error"
+msgstr "Ошибка"
+
+msgid "account_id_label"
+msgstr "Счёт {id}"
+
+msgid "operations_count"
+msgstr "{syncedCount} операций"
+
+msgid "sync_partial_error"
+msgstr "Часть счетов не удалось синхронизировать. Попробуйте снова."
+
+msgid "sync_connection_error"
+msgstr "Ошибка подключения к серверу"
+
+# Token modal
+msgid "token_modal_heading"
+msgstr "Подключите T-Invest"
+
+msgid "token_modal_subtitle"
+msgstr "Введите персональный токен T-Invest API для получения данных по счетам."
+
+msgid "api_token_label"
+msgstr "API-токен"
+
+msgid "where_to_get"
+msgstr "Где взять?"
+
+msgid "hide_token"
+msgstr "Скрыть токен"
+
+msgid "show_token"
+msgstr "Показать токен"
+
+msgid "verifying"
+msgstr "Проверка..."
+
+msgid "token_security_note"
+msgstr "Токен хранится в зашифрованном виде и используется только для чтения данных."
+
+msgid "invalid_token"
+msgstr "Неверный токен"
+
+# Navigation
+msgid "nav_dashboard"
+msgstr "Дашборд"
+
+msgid "nav_portfolio"
+msgstr "Портфель"
+
+msgid "nav_settings"
+msgstr "Настройки"
+
+msgid "light_theme"
+msgstr "Светлая тема"
+
+msgid "dark_theme"
+msgstr "Тёмная тема"
+
+msgid "theme_light"
+msgstr "Светлая"
+
+msgid "theme_dark"
+msgstr "Тёмная"
+
+msgid "lang_toggle"
+msgstr "EN"
+
+msgid "settings_language"
+msgstr "Язык"
+
+# Dashboard
+msgid "hello_user"
+msgstr "Привет, {firstName}!"
+
+msgid "dashboard_subtitle"
+msgstr "Сводная аналитика по всем синхронизированным счетам."
+
+msgid "portfolio_value_label"
+msgstr "Стоимость портфеля"
+
+msgid "total_across_accounts"
+msgstr "Суммарно по всем счетам"
+
+msgid "unrealized_pnl"
+msgstr "Нереализованный P&L"
+
+msgid "open_positions"
+msgstr "Открытые позиции"
+
+msgid "twr_return"
+msgstr "TWR доходность"
+
+msgid "time_weighted_return"
+msgstr "Time-Weighted Return"
+
+msgid "dividends_label"
+msgstr "Дивиденды"
+
+msgid "all_time"
+msgstr "За всё время"
+
+msgid "data_not_ready"
+msgstr "Данные ещё не готовы"
+
+msgid "snapshots_building"
+msgstr "Снэпшоты строятся после завершения синхронизации. Зайдите позже."
+
+# Portfolio & Settings pages
+msgid "section_under_development"
+msgstr "Раздел в разработке"
+
+# Portfolio instruments table
+msgid "portfolio_subtitle"
+msgstr "Инструменты портфеля и финансовый результат"
+
+msgid "filter_all"
+msgstr "Все"
+
+msgid "filter_open"
+msgstr "Открытые"
+
+msgid "col_ticker"
+msgstr "Тикер"
+
+msgid "col_status"
+msgstr "Статус"
+
+msgid "col_qty"
+msgstr "Кол-во"
+
+msgid "col_avg_price"
+msgstr "Ср. цена"
+
+msgid "col_current_price"
+msgstr "Цена"
+
+msgid "col_realized_pnl"
+msgstr "Реал. P&L"
+
+msgid "col_unrealized_pnl"
+msgstr "Нереал. P&L"
+
+msgid "col_total_pnl"
+msgstr "Total P&L"
+
+msgid "col_pnl_percent"
+msgstr "P&L %"
+
+msgid "col_annualized_pnl"
+msgstr "Год. %"
+
+msgid "col_today_pnl"
+msgstr "Сегодня"
+
+msgid "position_open"
+msgstr "Открыта"
+
+msgid "position_closed"
+msgstr "Закрыта"
+
+msgid "instruments_empty"
+msgstr "Нет данных по инструментам"
+
+msgid "portfolio_no_instruments"
+msgstr "Нет данных по инструментам"
+
+msgid "portfolio_no_instruments_subtitle"
+msgstr "Операции по счетам ещё не синхронизированы или отсутствуют."
+
+# Типы инструментов
+msgid "instrument_type_share"
+msgstr "Акция"
+
+msgid "instrument_type_bond"
+msgstr "Облигация"
+
+msgid "instrument_type_etf"
+msgstr "Фонд"
+
+msgid "instrument_type_futures"
+msgstr "Фьючерс"
+
+msgid "instrument_type_currency"
+msgstr "Валюта"
+
+msgid "instrument_type_option"
+msgstr "Опцион"
+
+msgid "t_invest_api_token"
+msgstr "API-токен T-Invest"
+
+msgid "api_token_description"
+msgstr "Используется для получения данных по брокерским счетам"
+
+# Login marketing stats
+msgid "return_twr_label"
+msgstr "Доходность (TWR)"
+
+# Portfolio chart
+msgid "value_history"
+msgstr "История стоимости"
+
+msgid "account_for_cashflows"
+msgstr "Учитывать операции снятия/пополнения"
+
+msgid "no_data_for_period"
+msgstr "Нет данных за период"
+
+msgid "period_1y"
+msgstr "1 год"
+
+msgid "period_9m"
+msgstr "9 мес"
+
+msgid "period_6m"
+msgstr "6 мес"
+
+msgid "period_3m"
+msgstr "3 мес"
+
+msgid "period_1m"
+msgstr "1 мес"
+
+msgid "period_1w"
+msgstr "Нед"
+
+msgid "period_all"
+msgstr "Всё"
+
+# Account types
+msgid "account_type_undefined"
+msgstr "Не определeн"
+
+msgid "account_type_brokerage"
+msgstr "Брокерский счет"
+
+msgid "account_type_iis"
+msgstr "ИИС"
+
+msgid "account_type_piggy_bank"
+msgstr "Инвесткопилка"
+
+msgid "account_type_money_market"
+msgstr "Фонд денежного рынка"
+
+msgid "account_type_debit_card"
+msgstr "Дебетовый карточный счeт"
+
+msgid "account_type_savings"
+msgstr "Накопительный счeт"
+# Register page
+msgid "register_page_subtitle"
+msgstr "Зарегистрируйтесь, чтобы начать."
+
+msgid "min_8_chars"
+msgstr "Минимум 8 символов"
+
+msgid "registering"
+msgstr "Регистрация..."
+
+msgid "hide_password"
+msgstr "Скрыть пароль"
+
+msgid "show_password"
+msgstr "Показать пароль"
+
+msgid "confirm_password_label_2"
+msgstr "Подтвердите пароль"
