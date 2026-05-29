@@ -413,3 +413,97 @@ msgstr "Показать пароль"
 
 msgid "confirm_password_label_2"
 msgstr "Подтвердите пароль"
+
+# Donut allocation
+msgid "allocation_title"
+msgstr "Структура портфеля"
+
+msgid "allocation_total"
+msgstr "Итого"
+
+msgid "allocation_all_type"
+msgstr "активов"
+
+msgid "allocation_all_sector"
+msgstr "секторов"
+
+msgid "allocation_all_currency"
+msgstr "валюты"
+
+msgid "allocation_by_type"
+msgstr "Тип"
+
+msgid "allocation_by_currency"
+msgstr "Валюта"
+
+msgid "allocation_by_sector"
+msgstr "Сектор"
+
+msgid "allocation_by_asset"
+msgstr "Актив"
+
+msgid "allocation_all_asset"
+msgstr "активов"
+
+# Currencies
+msgid "currency_rub"
+msgstr "Рубли"
+
+msgid "currency_usd"
+msgstr "Доллары"
+
+msgid "currency_eur"
+msgstr "Евро"
+
+msgid "currency_cny"
+msgstr "Юань"
+
+# Sectors
+msgid "sector_financial"
+msgstr "Финансы"
+
+msgid "sector_energy"
+msgstr "Энергетика"
+
+msgid "sector_telecom"
+msgstr "Телеком"
+
+msgid "sector_government"
+msgstr "Государство"
+
+msgid "sector_it"
+msgstr "Технологии"
+
+msgid "sector_other"
+msgstr "Прочее"
+
+msgid "sector_materials"
+msgstr "Сырьё"
+
+msgid "sector_health_care"
+msgstr "Здравоохранение"
+
+msgid "sector_utilities"
+msgstr "Коммунальные"
+
+msgid "sector_real_estate"
+msgstr "Недвижимость"
+
+msgid "sector_consumer"
+msgstr "Потребительский"
+
+# Dividend Calendar
+msgid "dividends_title"
+msgstr "Дивиденды и купоны"
+
+msgid "dividends_tab_upcoming"
+msgstr "Предстоящие"
+
+msgid "dividends_tab_history"
+msgstr "История"
+
+msgid "dividends_none_upcoming"
+msgstr "Нет предстоящих выплат"
+
+msgid "dividends_none_history"
+msgstr "История выплат пуста"

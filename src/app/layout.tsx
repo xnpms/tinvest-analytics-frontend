@@ -7,7 +7,7 @@ import { LocaleProvider } from '@/context/LocaleContext';
 
 const manrope = Manrope({
   subsets: ['latin', 'cyrillic'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['400', '500', '600', '700', '800'],
   variable: '--font-manrope',
   display: 'swap',
 });

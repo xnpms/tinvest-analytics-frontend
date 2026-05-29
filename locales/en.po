@@ -413,3 +413,97 @@ msgstr "Show password"
 
 msgid "confirm_password_label_2"
 msgstr "Confirm password"
+
+# Donut allocation
+msgid "allocation_title"
+msgstr "Portfolio Structure"
+
+msgid "allocation_total"
+msgstr "Total"
+
+msgid "allocation_all_type"
+msgstr "assets"
+
+msgid "allocation_all_sector"
+msgstr "sectors"
+
+msgid "allocation_all_currency"
+msgstr "currencies"
+
+msgid "allocation_by_type"
+msgstr "Type"
+
+msgid "allocation_by_currency"
+msgstr "Currency"
+
+msgid "allocation_by_sector"
+msgstr "Sector"
+
+msgid "allocation_by_asset"
+msgstr "Asset"
+
+msgid "allocation_all_asset"
+msgstr "assets"
+
+# Currencies
+msgid "currency_rub"
+msgstr "Rubles"
+
+msgid "currency_usd"
+msgstr "Dollars"
+
+msgid "currency_eur"
+msgstr "Euro"
+
+msgid "currency_cny"
+msgstr "Yuan"
+
+# Sectors
+msgid "sector_financial"
+msgstr "Financial"
+
+msgid "sector_energy"
+msgstr "Energy"
+
+msgid "sector_telecom"
+msgstr "Telecom"
+
+msgid "sector_government"
+msgstr "Government"
+
+msgid "sector_it"
+msgstr "Technology"
+
+msgid "sector_other"
+msgstr "Other"
+
+msgid "sector_materials"
+msgstr "Materials"
+
+msgid "sector_health_care"
+msgstr "Healthcare"
+
+msgid "sector_utilities"
+msgstr "Utilities"
+
+msgid "sector_real_estate"
+msgstr "Real Estate"
+
+msgid "sector_consumer"
+msgstr "Consumer"
+
+# Dividend Calendar
+msgid "dividends_title"
+msgstr "Dividends & Coupons"
+
+msgid "dividends_tab_upcoming"
+msgstr "Upcoming"
+
+msgid "dividends_tab_history"
+msgstr "History"
+
+msgid "dividends_none_upcoming"
+msgstr "No upcoming payments"
+
+msgid "dividends_none_history"
+msgstr "No payment history"

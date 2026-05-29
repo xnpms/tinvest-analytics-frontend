@@ -7,7 +7,7 @@ services:
     container_name: tinvest-analytics-frontend-nginx
     restart: unless-stopped
     ports:
-      - '8081:80'
+      - '8082:80'
     #    volumes:
     #      - ./dist:/usr/share/nginx/html
     env_file:
