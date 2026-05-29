@@ -1,4 +1,5 @@
 import { apiFetch } from './api';
+import type { AssetsAllocation, DividendCalendar } from './dashboard.types';
 
 export interface DashboardSummary {
   totalValueRub: number;
@@ -30,3 +31,11 @@ export const getPortfolioHistory = async (from?: string): Promise<PortfolioHisto
   const res = await apiFetch<PortfolioHistoryResponse>(`/api/v1/portfolio/history${params}`);
   return res?.data ?? [];
 };
+
+export const getAssetsAllocation = (): Promise<AssetsAllocation> =>
+  apiFetch<AssetsAllocation>('/api/v1/dashboard/assets-allocation');
+
+export const getDividendCalendar = (): Promise<DividendCalendar | null> =>
+  apiFetch<DividendCalendar | null>('/api/v1/portfolio/dividends');
+
+export type { AssetsAllocation, DividendCalendar };
