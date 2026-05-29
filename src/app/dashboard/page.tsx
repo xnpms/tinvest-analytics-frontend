@@ -9,8 +9,11 @@ import { useLocale } from '@/context/LocaleContext';
 import { TokenModal } from '@/components/TokenModal';
 import { Spinner } from '@/components/icons';
 import { getUserState } from '@/lib/user';
-import { getDashboardSummary, type DashboardSummary } from '@/lib/dashboard';
+import { getDashboardSummary, getAssetsAllocation, getDividendCalendar, type DashboardSummary } from '@/lib/dashboard';
+import type { AssetsAllocation, DividendCalendar } from '@/lib/dashboard.types';
 import { PortfolioChart } from '@/components/PortfolioChart';
+import { AllocationDonut } from '@/components/AllocationDonut';
+import { DividendCalendar as DividendCalendarWidget } from '@/components/DividendCalendar';
 import type { TinvestAccount } from '@/lib/onboarding';
 
 const DashboardPage = () => {
@@ -18,6 +21,8 @@ const DashboardPage = () => {
   const { i18n } = useLingui();
   useLocale();
   const [summary, setSummary] = useState<DashboardSummary | null>(null);
+  const [allocation, setAllocation] = useState<AssetsAllocation | null>(null);
+  const [dividends, setDividends] = useState<DividendCalendar | null>(null);
   const [email, setEmail] = useState('');
   const [isLoading, setIsLoading] = useState(true);
   const [isTokenModalOpen, setIsTokenModalOpen] = useState(false);
@@ -49,8 +54,14 @@ const DashboardPage = () => {
           return;
         }
 
-        const data = await getDashboardSummary();
+        const [data, allocationData, dividendData] = await Promise.all([
+          getDashboardSummary(),
+          getAssetsAllocation().catch(() => null),
+          getDividendCalendar().catch(() => null),
+        ]);
         setSummary(data);
+        setAllocation(allocationData);
+        setDividends(dividendData);
       } catch {
         // 401 обрабатывается глобально в apiFetch
       } finally {
@@ -122,9 +133,23 @@ const DashboardPage = () => {
               />
             </div>
 
-            <div className='mt-3 rounded-xl bg-card-dark p-4'>
-              <PortfolioChart />
+            <div className={`mt-3 grid grid-cols-1 gap-3 ${allocation !== null ? 'xl:grid-cols-[1fr_320px]' : ''}`}>
+              <div className='rounded-xl bg-card-dark p-4'>
+                <PortfolioChart />
+              </div>
+
+              {allocation !== null && (
+                <div className='rounded-xl bg-card-dark p-4'>
+                  <AllocationDonut allocation={allocation} />
+                </div>
+              )}
             </div>
+
+            {dividends !== null && (
+              <div className='mt-3 rounded-xl bg-card-dark p-4'>
+                <DividendCalendarWidget data={dividends} />
+              </div>
+            )}
           </>
         ) : (
           <EmptyState />

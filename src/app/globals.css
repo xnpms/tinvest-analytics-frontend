@@ -90,3 +90,14 @@ body {
     0 8px 32px rgba(124, 111, 234, 0.14),
     0 2px 8px rgba(124, 111, 234, 0.08);
 }
+
+.donut-legend::-webkit-scrollbar {
+  width: 4px;
+}
+.donut-legend::-webkit-scrollbar-track {
+  background: transparent;
+}
+.donut-legend::-webkit-scrollbar-thumb {
+  background: rgba(124, 111, 247, 0.3);
+  border-radius: 99px;
+}
