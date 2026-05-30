@@ -1,0 +1,509 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"MIME-Version: 1.0\n"
+"Language: en\n"
+
+# Auth
+msgid "sign_in"
+msgstr "Sign in"
+
+msgid "sign_up"
+msgstr "Sign up"
+
+msgid "loading"
+msgstr "Loading..."
+
+msgid "sign_out"
+msgstr "Sign out"
+
+msgid "hide"
+msgstr "Hide"
+
+msgid "show"
+msgstr "Show"
+
+msgid "close"
+msgstr "Close"
+
+msgid "continue_btn"
+msgstr "Continue"
+
+msgid "change_btn"
+msgstr "Change"
+
+# Login page
+msgid "marketing_heading"
+msgstr "Invest Smarter"
+
+msgid "marketing_subheading"
+msgstr "Track your portfolio, returns and dividends in one place."
+
+msgid "copyright"
+msgstr "© 2025 Investa. All rights reserved."
+
+msgid "welcome_heading"
+msgstr "Welcome 👋"
+
+msgid "no_account"
+msgstr "Don't have an account?"
+
+msgid "register_link"
+msgstr "Sign up"
+
+msgid "password_label"
+msgstr "Password"
+
+msgid "forgot_password"
+msgstr "Forgot password?"
+
+msgid "password_placeholder"
+msgstr "Enter password"
+
+msgid "invalid_credentials"
+msgstr "Invalid email or password"
+
+msgid "register_heading"
+msgstr "Create account ✨"
+
+msgid "already_has_account"
+msgstr "Already have an account?"
+
+msgid "strong_password_placeholder"
+msgstr "Create a strong password"
+
+msgid "confirm_password_label"
+msgstr "Confirm password"
+
+msgid "repeat_password_placeholder"
+msgstr "Repeat password"
+
+msgid "agree_with"
+msgstr "I agree with"
+
+msgid "terms_and_policy"
+msgstr "Terms and Privacy Policy"
+
+msgid "passwords_mismatch"
+msgstr "Passwords do not match"
+
+msgid "registration_error"
+msgstr "Registration error"
+
+# Account selection
+msgid "select_accounts_heading"
+msgstr "Select accounts"
+
+msgid "select_accounts_subtitle"
+msgstr "Select accounts to synchronize data."
+
+msgid "account_closed"
+msgstr "Account closed"
+
+msgid "account_label"
+msgstr "Account"
+
+msgid "hidden_accounts"
+msgstr "Hidden accounts"
+
+msgid "select_at_least_one"
+msgstr "Select at least one account"
+
+msgid "failed_get_account_ids"
+msgstr "Failed to get account identifiers"
+
+msgid "account_selection_error"
+msgstr "Account selection error"
+
+msgid "starting"
+msgstr "Starting..."
+
+msgid "synchronize"
+msgstr "Synchronize"
+
+msgid "synchronize_count"
+msgstr "Synchronize ({count})"
+
+# Syncing
+msgid "sync_heading"
+msgstr "Synchronization"
+
+msgid "sync_loading"
+msgstr "Loading data from your accounts..."
+
+msgid "sync_connecting"
+msgstr "Connecting..."
+
+msgid "sync_status_waiting"
+msgstr "Waiting"
+
+msgid "sync_status_syncing"
+msgstr "Synchronizing"
+
+msgid "sync_status_done"
+msgstr "Completed"
+
+msgid "sync_status_error"
+msgstr "Error"
+
+msgid "account_id_label"
+msgstr "Account {id}"
+
+msgid "operations_count"
+msgstr "{syncedCount} operations"
+
+msgid "sync_partial_error"
+msgstr "Some accounts could not be synchronized. Please try again."
+
+msgid "sync_connection_error"
+msgstr "Server connection error"
+
+# Token modal
+msgid "token_modal_heading"
+msgstr "Connect T-Invest"
+
+msgid "token_modal_subtitle"
+msgstr "Enter your personal T-Invest API token to access account data."
+
+msgid "api_token_label"
+msgstr "API token"
+
+msgid "where_to_get"
+msgstr "Where to get it?"
+
+msgid "hide_token"
+msgstr "Hide token"
+
+msgid "show_token"
+msgstr "Show token"
+
+msgid "verifying"
+msgstr "Verifying..."
+
+msgid "token_security_note"
+msgstr "Your token is stored encrypted and used only for reading data."
+
+msgid "invalid_token"
+msgstr "Invalid token"
+
+# Navigation
+msgid "nav_dashboard"
+msgstr "Dashboard"
+
+msgid "nav_portfolio"
+msgstr "Portfolio"
+
+msgid "nav_settings"
+msgstr "Settings"
+
+msgid "light_theme"
+msgstr "Light theme"
+
+msgid "dark_theme"
+msgstr "Dark theme"
+
+msgid "theme_light"
+msgstr "Light"
+
+msgid "theme_dark"
+msgstr "Dark"
+
+msgid "lang_toggle"
+msgstr "RU"
+
+msgid "settings_language"
+msgstr "Language"
+
+# Dashboard
+msgid "hello_user"
+msgstr "Hello, {firstName}!"
+
+msgid "dashboard_subtitle"
+msgstr "Aggregate analytics across all synchronized accounts."
+
+msgid "portfolio_value_label"
+msgstr "Portfolio Value"
+
+msgid "total_across_accounts"
+msgstr "Total across all accounts"
+
+msgid "unrealized_pnl"
+msgstr "Unrealized P&L"
+
+msgid "open_positions"
+msgstr "Open positions"
+
+msgid "twr_return"
+msgstr "TWR Return"
+
+msgid "time_weighted_return"
+msgstr "Time-Weighted Return"
+
+msgid "dividends_label"
+msgstr "Dividends"
+
+msgid "all_time"
+msgstr "All time"
+
+msgid "data_not_ready"
+msgstr "Data not ready yet"
+
+msgid "snapshots_building"
+msgstr "Snapshots are built after sync completes. Check back later."
+
+# Portfolio & Settings pages
+msgid "section_under_development"
+msgstr "Section under development"
+
+# Portfolio instruments table
+msgid "portfolio_subtitle"
+msgstr "Portfolio instruments and performance"
+
+msgid "filter_all"
+msgstr "All"
+
+msgid "filter_open"
+msgstr "Open"
+
+msgid "col_ticker"
+msgstr "Ticker"
+
+msgid "col_status"
+msgstr "Status"
+
+msgid "col_qty"
+msgstr "Qty"
+
+msgid "col_avg_price"
+msgstr "Avg Price"
+
+msgid "col_current_price"
+msgstr "Price"
+
+msgid "col_realized_pnl"
+msgstr "Realized P&L"
+
+msgid "col_unrealized_pnl"
+msgstr "Unrealized P&L"
+
+msgid "col_total_pnl"
+msgstr "Total P&L"
+
+msgid "col_pnl_percent"
+msgstr "P&L %"
+
+msgid "col_annualized_pnl"
+msgstr "Ann. %"
+
+msgid "col_today_pnl"
+msgstr "Today"
+
+msgid "position_open"
+msgstr "Open"
+
+msgid "position_closed"
+msgstr "Closed"
+
+msgid "instruments_empty"
+msgstr "No instrument data"
+
+msgid "portfolio_no_instruments"
+msgstr "No instrument data"
+
+msgid "portfolio_no_instruments_subtitle"
+msgstr "Operations haven't been synchronized yet or are missing."
+
+# Instrument types
+msgid "instrument_type_share"
+msgstr "Share"
+
+msgid "instrument_type_bond"
+msgstr "Bond"
+
+msgid "instrument_type_etf"
+msgstr "ETF"
+
+msgid "instrument_type_futures"
+msgstr "Futures"
+
+msgid "instrument_type_currency"
+msgstr "Currency"
+
+msgid "instrument_type_option"
+msgstr "Option"
+
+msgid "t_invest_api_token"
+msgstr "T-Invest API Token"
+
+msgid "api_token_description"
+msgstr "Used to fetch data from brokerage accounts"
+
+# Login marketing stats
+msgid "return_twr_label"
+msgstr "Return (TWR)"
+
+# Portfolio chart
+msgid "value_history"
+msgstr "Value History"
+
+msgid "account_for_cashflows"
+msgstr "Account for deposits/withdrawals"
+
+msgid "no_data_for_period"
+msgstr "No data for period"
+
+msgid "period_1y"
+msgstr "1 year"
+
+msgid "period_9m"
+msgstr "9 mo"
+
+msgid "period_6m"
+msgstr "6 mo"
+
+msgid "period_3m"
+msgstr "3 mo"
+
+msgid "period_1m"
+msgstr "1 mo"
+
+msgid "period_1w"
+msgstr "Week"
+
+msgid "period_all"
+msgstr "All"
+
+# Account types
+msgid "account_type_undefined"
+msgstr "Undefined"
+
+msgid "account_type_brokerage"
+msgstr "Brokerage account"
+
+msgid "account_type_iis"
+msgstr "IIS"
+
+msgid "account_type_piggy_bank"
+msgstr "Savings piggy bank"
+
+msgid "account_type_money_market"
+msgstr "Money market fund"
+
+msgid "account_type_debit_card"
+msgstr "Debit card account"
+
+msgid "account_type_savings"
+msgstr "Savings account"
+# Register page
+msgid "register_page_subtitle"
+msgstr "Sign up to get started."
+
+msgid "min_8_chars"
+msgstr "Minimum 8 characters"
+
+msgid "registering"
+msgstr "Registering..."
+
+msgid "hide_password"
+msgstr "Hide password"
+
+msgid "show_password"
+msgstr "Show password"
+
+msgid "confirm_password_label_2"
+msgstr "Confirm password"
+
+# Donut allocation
+msgid "allocation_title"
+msgstr "Portfolio Structure"
+
+msgid "allocation_total"
+msgstr "Total"
+
+msgid "allocation_all_type"
+msgstr "assets"
+
+msgid "allocation_all_sector"
+msgstr "sectors"
+
+msgid "allocation_all_currency"
+msgstr "currencies"
+
+msgid "allocation_by_type"
+msgstr "Type"
+
+msgid "allocation_by_currency"
+msgstr "Currency"
+
+msgid "allocation_by_sector"
+msgstr "Sector"
+
+msgid "allocation_by_asset"
+msgstr "Asset"
+
+msgid "allocation_all_asset"
+msgstr "assets"
+
+# Currencies
+msgid "currency_rub"
+msgstr "Rubles"
+
+msgid "currency_usd"
+msgstr "Dollars"
+
+msgid "currency_eur"
+msgstr "Euro"
+
+msgid "currency_cny"
+msgstr "Yuan"
+
+# Sectors
+msgid "sector_financial"
+msgstr "Financial"
+
+msgid "sector_energy"
+msgstr "Energy"
+
+msgid "sector_telecom"
+msgstr "Telecom"
+
+msgid "sector_government"
+msgstr "Government"
+
+msgid "sector_it"
+msgstr "Technology"
+
+msgid "sector_other"
+msgstr "Other"
+
+msgid "sector_materials"
+msgstr "Materials"
+
+msgid "sector_health_care"
+msgstr "Healthcare"
+
+msgid "sector_utilities"
+msgstr "Utilities"
+
+msgid "sector_real_estate"
+msgstr "Real Estate"
+
+msgid "sector_consumer"
+msgstr "Consumer"
+
+# Dividend Calendar
+msgid "dividends_title"
+msgstr "Dividends & Coupons"
+
+msgid "dividends_tab_upcoming"
+msgstr "Upcoming"
+
+msgid "dividends_tab_history"
+msgstr "History"
+
+msgid "dividends_none_upcoming"
+msgstr "No upcoming payments"
+
+msgid "dividends_none_history"
+msgstr "No payment history"
